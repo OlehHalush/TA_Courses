@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 Read double number r and calculate the length (l=2*pi*r), area (S=pi*r*r) and volume (4/3*pi*r*r*r) of a circle of given r 
 */
 
-namespace Presenttaion1_HW1_Task3
+namespace Presentation1_HW1_Task3
 {
     class Program
     {
