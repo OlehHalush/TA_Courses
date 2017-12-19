@@ -17,15 +17,10 @@ namespace Presentation3_Task1_2
         {
             Console.WriteLine("Please enter double value:");
             double userInput = Convert.ToDouble(Console.ReadLine());
-            userInput /= 1;
-            string userNumber = Convert.ToString(userInput);
-            char[] charArray = new char[2];
-            char first = userNumber[2];
-            char second = userNumber[3];
-            int firstNumber = Convert.ToInt32(first);
-            int secondNumber = Convert.ToInt32(second);
-            int result = first + second;
-            Console.WriteLine(first);
+            int firstNumberAfterComa = (int)((userInput % 1) * 10);
+            int secondNumberAfterComa = (int)((((userInput % 1) * 100)) % 10);
+            int resultOfAddition = firstNumberAfterComa + secondNumberAfterComa;
+            Console.WriteLine(resultOfAddition);
             Console.ReadKey();
         }
     }
