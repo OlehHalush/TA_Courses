@@ -15,6 +15,7 @@ namespace Presentation3_Task1_3
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Please enter an hour:");
             int hours = Convert.ToInt32(Console.ReadLine());
             string greeting = "Hello World!";
             if (hours > 0 && hours <= 6)

@@ -15,7 +15,7 @@ namespace Presentation3_Task1_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter double value:");
+            Console.WriteLine("Please enter a double value:");
             double userInput = Convert.ToDouble(Console.ReadLine());
             int firstNumberAfterComa = (int)((userInput % 1) * 10);
             int secondNumberAfterComa = (int)((((userInput % 1) * 100)) % 10);
