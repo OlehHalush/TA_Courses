@@ -5,18 +5,20 @@ using System.Text;
 using System.Threading.Tasks;
 
 /*
-Ввести a  та b – два цілих числа. 
+Ввести a та b – два цілих числа. 
 Порахувати скільки цілих чисел  з діапазону [a..b] діляться на 3 без остачі.
 */
 
 namespace Presentation4_Task1
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            int a = 2;
-            int b = 8;
+            Console.WriteLine("Please enter first number:");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please enter second number:");
+            int b = Convert.ToInt32(Console.ReadLine());
             for (int i = a; a <= b; a++)
             {
                 if (a % 3 == 0)
@@ -24,6 +26,7 @@ namespace Presentation4_Task1
                     Console.WriteLine(a);
                 }
             }
+
             Console.ReadLine();
         }
     }

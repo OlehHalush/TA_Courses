@@ -11,12 +11,14 @@ using System.Threading.Tasks;
 
 namespace Presentation4_Task4
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            int[] intArray = new int[] { 8, 1, 2, 0, -1, 2, 5 };
-            int averageValue = 0;
+            int[] intArray = new int[] { 8, 8, -1, 2, 5 };
+            int arithmeticMean = 0;
+            int sum = 0;
+            int count = 0;
             foreach (int a in intArray)
             {
                 if (a < 0)
@@ -25,10 +27,13 @@ namespace Presentation4_Task4
                 }
                 else
                 {
-                    averageValue += a;
+                    sum += a;
+                    count += 1;
                 }
             }
-            Console.WriteLine("The average value is {0}", averageValue);
+
+            arithmeticMean = sum / count;
+            Console.WriteLine("The arithmetic mean value is {0}", arithmeticMean);
             Console.ReadKey();
         }
     }

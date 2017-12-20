@@ -11,19 +11,19 @@ using System.Threading.Tasks;
 
 namespace Presentation4_Task3
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("What would you like to drink? Cofee/Tee/Juice/Water");
+            Console.WriteLine("What would you like to drink? Cofee/Tea/Juice/Water");
             string userInput = Console.ReadLine();
             switch (userInput.ToLower())
             {
                 case "cofee":
                     Console.WriteLine("Cofee will cost you 2$.");
                     break;
-                case "tee":
-                    Console.WriteLine("Tee will cost you 1$.");
+                case "tea":
+                    Console.WriteLine("Tea will cost you 1$.");
                     break;
                 case "juice":
                     Console.WriteLine("juice will cost you 2$.");
@@ -35,6 +35,7 @@ namespace Presentation4_Task3
                     Console.WriteLine("Give me all your money!");
                     break;
             }
+
             Console.ReadKey();
         }
     }

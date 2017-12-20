@@ -10,15 +10,16 @@ using System.Threading.Tasks;
 
 namespace Presentation4_Task2
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            string str = "myName";
-            for (int i = 0; i < str.Length; i += 2)
+            string str = "myNameisOleg";
+            for (int i = 1; i < str.Length; i += 2)
             {
                 Console.Write(str[i]);
             }
+
             Console.ReadKey();
         }
     }

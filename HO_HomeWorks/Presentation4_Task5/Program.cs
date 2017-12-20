@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace Presentation4_Task5
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Please enter a year:");
             int year = Convert.ToInt32(Console.ReadLine());
@@ -25,6 +25,7 @@ namespace Presentation4_Task5
             {
                 Console.WriteLine("You entered {0} year. It's not a leap year.", year);
             }
+
             Console.ReadKey();
         }
     }

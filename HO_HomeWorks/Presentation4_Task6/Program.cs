@@ -10,21 +10,22 @@ using System.Threading.Tasks;
 
 namespace Presentation4_Task6
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Please enter a number:");
-            int sum = 0;
+            double sum = 0;
             string userNumber = Console.ReadLine();
-            bool isUserInputANumber = Int32.TryParse(userNumber, out int input);
+            bool isUserInputANumber = int.TryParse(userNumber, out int input);
             if (isUserInputANumber == true)
             {
-                for (int i = 0; i <= input; i++)
+                for (int i = 0; i <= userNumber.Length - 1; i++)
                 {
-                    sum += i;
+                    sum += char.GetNumericValue(userNumber[i]);
                 }
             }
+
             Console.WriteLine("The sum of numbers is {0}", sum);
             Console.ReadKey();
         }

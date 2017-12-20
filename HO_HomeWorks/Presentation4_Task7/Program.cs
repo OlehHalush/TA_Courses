@@ -10,13 +10,14 @@ using System.Threading.Tasks;
 
 namespace Presentation4_Task7
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Please enter a number:");
             string userNumber = Console.ReadLine();
-            bool isUserInputANumber = Int32.TryParse(userNumber, out int input);
+            bool areDigitsPair = false;
+            bool isUserInputANumber = int.TryParse(userNumber, out int input);
             if (isUserInputANumber == true)
             {
                 foreach (char a in userNumber)
@@ -24,16 +25,26 @@ namespace Presentation4_Task7
                     double b = char.GetNumericValue(a);
                     if (b % 2 != 0)
                     {
-                        Console.WriteLine("Some chars in your number are odd.");
+                        areDigitsPair = false;
                         break;
                     }
                     else
                     {
-                        Console.WriteLine("All chars is your number are pair.");
+                        areDigitsPair = true;
                     }
                 }
-                Console.ReadKey();
             }
+
+            if (areDigitsPair == true)
+            {
+                Console.WriteLine("All digits is your number are pair.");
+            }
+            else
+            {
+                Console.WriteLine("Some digits in your number are odd.");
+            }
+
+            Console.ReadKey();
         }
     }
 }
