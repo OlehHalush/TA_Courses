@@ -5,12 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 
 /*
-Визначити клас Car з полями назва, колір, ціна, const полем CompanyName.
-Створити два конструктори – дефолтний і з параметрами.
-Створити властивість доступу до поля колір. 
-Визначити методи Input() –  для введення даних про машину з консолі,                               
-Print() - для виведення даних про машину на консоль                              
-ChangePrice(double x) – для зміни ціни на х%
+- Визначити клас Car з полями назва, колір, ціна, const полем CompanyName.
+- Створити два конструктори – дефолтний і з параметрами.
+- Створити властивість доступу до поля колір. 
+- Визначити методи:
+1) Input() –  для введення даних про машину з консолі
+2) Print() - для виведення даних про машину на консоль
+3) ChangePrice(double x) – для зміни ціни на х%
+- Ввести дані про 3 авто. 
+- Зменшити їх ціну на 10%, вивести дані про авто.
+- Ввести новий колір і пофарбувати авто з кольором white у вказаний колір
+- Перевантажити оператор == для класу Car, авто рівні, якщо назва та ціна рівні 
+- Перевизначити в класі Car метод ToString(), який повертає рядок з даними про авто
 */
 
 namespace Presentation5_Task1
@@ -45,7 +51,7 @@ namespace Presentation5_Task1
 
         private double price;
         const string CompanyName = "GiveMeAllTheMoNey";
-        
+
 
         public void Input()
         {
@@ -76,9 +82,33 @@ namespace Presentation5_Task1
 
         public override string ToString()
         {
-            string myString = "The car's name is " + string.Format(name, this) + " ,the color is " + string.Format(color, this) + " and the price is " + string.Format(Convert.ToString(price), this);
+            string myString = "The car's name is " + string.Format(name, this) + ", the color is " + string.Format(color, this) + " and the price is " + string.Format(Convert.ToString(price), this);
             return myString;
 
+        }
+
+        public static bool operator == (Car Car1, Car Car2)
+        {
+            if (Car1.name == Car2.name && Car1.price == Car2.price)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool operator != (Car Car1, Car Car2)
+        {
+            if (!(Car1.name == Car2.name && Car1.price == Car2.price))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
     }
@@ -89,8 +119,10 @@ namespace Presentation5_Task1
             Car myFirstCar = new Car("Opel", "Green", 200);
             Car mySecondCar = new Car("Renault", "Black", 400);
             Car myThirdCar = new Car("Mercedes", "White", 1000);
-            Console.WriteLine(myFirstCar.ToString());
-            Console.ReadKey();
+            myFirstCar.ChangePrice(10);
+            mySecondCar.ChangePrice(10);
+            myThirdCar.ChangePrice(10);
+            myThirdCar.Color = "Silver";
         }
     }
 }
