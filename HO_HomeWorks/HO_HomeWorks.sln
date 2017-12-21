@@ -75,7 +75,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task16", "Task16\Task16.csp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task4", "Task4", "{B5AC6DBD-03C8-4177-9FD1-9B2FD9152319}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "presentation5_Task1", "presentation5_Task1\presentation5_Task1.csproj", "{5AA4B902-EB3D-4548-9D1B-1AEEE4EC3601}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation5_Task1", "presentation5_Task1\Presentation5_Task1.csproj", "{5AA4B902-EB3D-4548-9D1B-1AEEE4EC3601}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

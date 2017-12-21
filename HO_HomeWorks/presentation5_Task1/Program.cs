@@ -13,46 +13,84 @@ Print() - для виведення даних про машину на конс
 ChangePrice(double x) – для зміни ціни на х%
 */
 
-namespace presentation5_Task1
+namespace Presentation5_Task1
 {
     public class Car
     {
-        protected string name;
+        public Car()
+        {
+        }
+
+        public Car(string someName, string someColor, double somePrice)
+        {
+            name = someName;
+            color = someColor;
+            price = somePrice;
+        }
+
+        private string name;
         private string color;
+
         public string Color
         {
             get
             {
-                return name;   
+                return color;
             }
             set
             {
-                name = value;
+                color = value;
             }
         }
 
-        protected double price;
+        private double price;
         const string CompanyName = "GiveMeAllTheMoNey";
-        Car()
-        { }
-        Car(string someName, string someColor, double somePrice)
+        
+
+        public void Input()
         {
-            name = someName;
-            Color = someColor;
-            price = somePrice;
+            Console.WriteLine("Please enter name of your car:");
+            name = Console.ReadLine();
+            Console.WriteLine("Please enter a color of your car:");
+            color = Console.ReadLine();
+            Console.WriteLine("Please enter a price of your car:");
+            price = Convert.ToInt32(Console.ReadLine());
         }
 
-        protected void InsertData(string someName, string someColor, double somePrice)
-        { 
-             name = someName;
-             Color = someColor;
-             price = somePrice;
+        public void Print()
+        {
+            Console.WriteLine("The car's name is {0}, color is {1} and the price is {2}", name, color, price);
         }
+
+        public double ChangePrice(double x)
+        {
+            price = ToPersentage(x, price);
+            return price;
+        }
+
+        public static double ToPersentage(double percent, double total)
+        {
+            double pers = total + ((percent / 100) * total);
+            return pers;
+        }
+
+        public override string ToString()
+        {
+            string myString = "The car's name is " + string.Format(name, this) + " ,the color is " + string.Format(color, this) + " and the price is " + string.Format(Convert.ToString(price), this);
+            return myString;
+
+        }
+
     }
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+            Car myFirstCar = new Car("Opel", "Green", 200);
+            Car mySecondCar = new Car("Renault", "Black", 400);
+            Car myThirdCar = new Car("Mercedes", "White", 1000);
+            Console.WriteLine(myFirstCar.ToString());
+            Console.ReadKey();
         }
     }
 }
