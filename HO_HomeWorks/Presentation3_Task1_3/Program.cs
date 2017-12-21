@@ -11,21 +11,33 @@ using System.Threading.Tasks;
 
 namespace Presentation3_Task1_3
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Please enter an hour:");
             int hours = Convert.ToInt32(Console.ReadLine());
             string greeting = "Hello World!";
             if (hours > 0 && hours <= 6)
+            {
                 greeting = "Good Night!";
+            }
+
             if (hours > 6 && hours <= 12)
+            {
                 greeting = "Good Morning!";
+            }
+
             if (hours > 12 && hours <= 18)
+            {
                 greeting = "Good Day!";
+            }
+
             if (hours > 18 && hours <= 24)
+            {
                 greeting = "Good Evening!";
+            }
+
             Console.WriteLine(greeting);
             Console.ReadLine();
         }

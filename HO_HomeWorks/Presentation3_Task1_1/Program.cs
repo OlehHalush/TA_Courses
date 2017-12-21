@@ -11,9 +11,9 @@ using System.Threading.Tasks;
 
 namespace Presentation3_Task1_1
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Please enter a first number:");
             int day = Convert.ToInt32(Console.ReadLine());
@@ -22,9 +22,15 @@ namespace Presentation3_Task1_1
             bool canBeADay = false;
             bool canBeAMonth = false;
             if (day > 0 && day < 32)
+            {
                 canBeADay = true;
+            }
+
             if (month > 0 && month < 13)
+            {
                 canBeAMonth = true;
+            }
+
             Console.WriteLine("Can your first number be a day? - {0}", canBeADay);
             Console.WriteLine("Can your second number be a month? - {0}", canBeAMonth);
             Console.ReadKey();

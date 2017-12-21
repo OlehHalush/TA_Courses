@@ -10,11 +10,12 @@ In method Main() write code for solving next tasks:
 b) define integer variable a. Read the value of a from console and calculate area and perimeter of square with length a. 
 Output obtained results.
 */
+
 namespace Presentation1_HW1_Task1
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             int a = Convert.ToInt32(Console.ReadLine());
             int squareArea = Convert.ToInt32(Math.Pow(a, 2));

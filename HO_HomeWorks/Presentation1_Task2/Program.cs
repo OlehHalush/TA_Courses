@@ -12,9 +12,9 @@ Read the value answer and output: “You are (answer)".
 
 namespace Presentation1_Task2
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("How are you?");
             string answer = Console.ReadLine();

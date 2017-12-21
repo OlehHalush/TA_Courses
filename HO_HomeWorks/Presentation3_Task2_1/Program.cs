@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Presentation3_Task2_1
 {
-    enum TestCaseStatus : byte
+    public enum TestCaseStatus : byte
     {
         Pass,
         Fail,
@@ -20,9 +20,9 @@ namespace Presentation3_Task2_1
         Unexecuted
     }
 
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             TestCaseStatus test1Status = TestCaseStatus.Pass;
             Console.WriteLine(test1Status);

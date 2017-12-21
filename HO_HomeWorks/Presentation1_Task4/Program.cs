@@ -11,16 +11,21 @@ Check if they are both positive – use bool expretion
 
 namespace Presentation1_Task4
 {
-    class Program
+    public class Program
     {
-        static bool IsNumberPositive(int a)
+        public static bool IsNumberPositive(int a)
         {
             if (a > 0)
+            {
                 return true;
+            }
             else
+            {
                 return false;
+            }
         }
-        static void Main(string[] args)
+
+        public static void Main(string[] args)
         {
             Console.WriteLine("Enter 2 numbers:");
             int firstNumber = Convert.ToInt32(Console.ReadLine());

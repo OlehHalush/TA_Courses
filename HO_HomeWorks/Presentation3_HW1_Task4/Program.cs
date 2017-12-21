@@ -13,25 +13,25 @@ Output myDog into console. (Declare method ToString in struct)
 
 namespace Presentation3_HW1_Task4
 {
-    struct Dog
+    public struct Dog
     {
-        public string name;
-        public string mark;
-        public byte age;
+        public string Name;
+        public string Mark;
+        public byte Age;
     }
 
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Dog myDog = new Dog();
             Console.WriteLine("Please enter dog's name:");
-            myDog.name = Console.ReadLine();
+            myDog.Name = Console.ReadLine();
             Console.WriteLine("Please enter dog's mark:");
-            myDog.mark = Console.ReadLine();
+            myDog.Mark = Console.ReadLine();
             Console.WriteLine("Please enter dog's age:");
-            myDog.age = Convert.ToByte(Console.ReadLine());
-            Console.WriteLine("Dog's name is {0}, mark is {1} and age is {2}", myDog.name, myDog.mark, myDog.age);
+            myDog.Age = Convert.ToByte(Console.ReadLine());
+            Console.WriteLine("Dog's name is {0}, mark is {1} and age is {2}", myDog.Name, myDog.Mark, myDog.Age);
             Console.ReadKey();
         }
     }

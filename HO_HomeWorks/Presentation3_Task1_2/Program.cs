@@ -11,14 +11,14 @@ using System.Threading.Tasks;
 
 namespace Presentation3_Task1_2
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Please enter a double value:");
             double userInput = Convert.ToDouble(Console.ReadLine());
             int firstNumberAfterComa = (int)((userInput % 1) * 10);
-            int secondNumberAfterComa = (int)((((userInput % 1) * 100)) % 10);
+            int secondNumberAfterComa = (int)((userInput % 1) * 100) % 10;
             int resultOfAddition = firstNumberAfterComa + secondNumberAfterComa;
             Console.WriteLine(resultOfAddition);
             Console.ReadKey();

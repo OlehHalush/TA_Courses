@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5AA4B902-EB3D-4548-9D1B-1AEEE4EC3601}</ProjectGuid>
+    <ProjectGuid>{01B7799A-6F5A-4C32-946E-0EF921A31D84}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>presentation5_Task1</RootNamespace>
-    <AssemblyName>presentation5_Task1</AssemblyName>
+    <RootNamespace>Presentation5_HW4</RootNamespace>
+    <AssemblyName>Presentation5_HW4</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,10 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Car.cs" />
-    <Compile Include="Program.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Person.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

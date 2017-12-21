@@ -10,26 +10,27 @@ Read double number r and calculate the length (l=2*pi*r), area (S=pi*r*r) and vo
 
 namespace Presentation1_HW1_Task3
 {
-    class Program
+    public class Program
     {
-        static void GetLengthOfCircle(double a)
+        public static void GetLengthOfCircle(double a)
         {
             double length = 2 * 3.14 * a;
             Console.WriteLine("The length of a circle is: {0}", length);
         }
-        static void GetAreaOfCircle(double a)
+
+        public static void GetAreaOfCircle(double a)
         {
             double area = 3.14 * Math.Pow(a, 2);
             Console.WriteLine("The area of a circle is: {0}", area);
         }
 
-        static void GetVolumeOfCircle(double a)
+        public static void GetVolumeOfCircle(double a)
         {
             double volume = 4 / 3 * 3.14 * Math.Pow(a, 3);
             Console.WriteLine("The volume of a circle is: {0}", volume);
         }
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Enter a double number:");
             double doubleNumber = Convert.ToInt32(Console.ReadLine());

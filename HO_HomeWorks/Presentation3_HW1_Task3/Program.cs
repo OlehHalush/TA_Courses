@@ -12,7 +12,7 @@ c) read number of HTTP Error (400, 401,402, ...) and write the name of this erro
 
 namespace Presentation3_HW1_Task3
 {
-    enum HTTPError
+    public enum HTTPError
     {
         BadRequest,
         Unauthorized,
@@ -22,9 +22,9 @@ namespace Presentation3_HW1_Task3
         GoogleWillHelpYou
     }
 
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Please enter a number of your error:");
             int errorNumber = Convert.ToInt32(Console.ReadLine());
@@ -50,6 +50,7 @@ namespace Presentation3_HW1_Task3
                     error = HTTPError.GoogleWillHelpYou;
                     break;
             }
+
             Console.WriteLine(error);
             Console.ReadKey();
         }

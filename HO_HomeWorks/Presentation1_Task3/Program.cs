@@ -8,11 +8,12 @@ using System.Threading.Tasks;
 Read 3 variables of char type. 
 Write message: “You enter (first char), (second char), (3 char)”
 */
+
 namespace Presentation1_Task3
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Enter first char:");
             char firstChar = Convert.ToChar(Console.ReadLine());
