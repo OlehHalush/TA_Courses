@@ -63,6 +63,21 @@ namespace Presentation5_HW4
             }
         }
 
+        private bool isNamsDuplicated = false;
+
+        public bool IsNameDuplicate
+        {
+            get
+            {
+                return this.isNamsDuplicated;
+            }
+
+            set
+            {
+                this.isNamsDuplicated = value;
+            }
+        }
+
         public int GetAge(int year)
         {
             int currentYear = Convert.ToInt32(DateTime.Today.Year);
