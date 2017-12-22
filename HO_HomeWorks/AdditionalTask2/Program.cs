@@ -26,107 +26,23 @@ B) Обчислити сумарну площу країн за материка
 
 namespace AdditionalTask2
 {
-    public enum Mainland
-    {
-        Europe,
-        Asia,
-        Africa,
-        Australia,
-        Antarctica,
-        NorthAmerica,
-        SouthAmerica
-    }
-
-    public class Country
-    {
-        public Country()
-        {
-        }
-
-        public Country(int id, string name, long area, int population, Mainland mainland)
-        {
-            this.name = name;
-            this.name = name;
-            this.area = area;
-            this.population = population;
-            this.mainland = mainland;
-        }
-
-        private int id;
-
-        public int ID
-        {
-            get
-            {
-                return this.id;
-            }
-        }
-
-        private string name;
-
-        public string Name
-        {
-            get
-            {
-                return this.name;
-            }
-
-            set
-            {
-                this.name = value;
-            }
-        }
-
-        private long area;
-
-        public long Area
-        {
-            get
-            {
-                return this.area;
-            }
-
-            set
-            {
-                this.area = value;
-            }
-        }
-
-        private int population;
-
-        public int Population
-        {
-            get
-            {
-                return this.population;
-            }
-
-            set
-            {
-                this.population = value;
-            }
-        }
-
-        private Mainland mainland;
-
-        public Mainland Mainland
-        {
-            get
-            {
-                return this.mainland;
-            }
-
-            set
-            {
-                this.mainland = value;
-            }
-        }
-    }
+    
 
     public class Program
     {
         public static void Main(string[] args)
         {
+            Country ukraine = new Country(1, "Ukraine", 603628, 42418235, Mainland.Europe);
+            Country germany = new Country(2, "Germany", 357376, 80854000, Mainland.Europe);
+            Country poland = new Country(3, "Poland", 312679, 37950000, Mainland.Europe);
+            Country estonia = new Country(4, "Estonia", 45336, 1316000, Mainland.Europe);
+            Country india = new Country(5, "India", 3287000, 1324000000, Mainland.Asia);
+            Country afghanistan = new Country(6, "Afghanistan", 652864, 34660000, Mainland.Asia);
+            Country gana = new Country(7, "Gana", 238535, 28210000, Mainland.Africa);
+            Country kongo = new Country(8, "Kongo", 342000, 5126000, Mainland.Africa);
+            Country samoa = new Country(9, "Samoa", 2831, 179000, Mainland.Australia);
+            Country tonha = new Country(10, "Tonha", 748, 107122, Mainland.Australia);
+            Country[] countriesArray = new Country[] { ukraine, germany, poland, estonia, india, afghanistan, gana, kongo, samoa, tonha };
         }
     }
 }
