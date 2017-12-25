@@ -105,7 +105,7 @@ namespace AdditionalTask2
 
         public override string ToString()
         {
-            string myString = "Country's ID is " + this.id + ", name is " + this.name + ", area is " + this.area + ", population is " + this.population + ", mainland is " + this.mainland;
+            string myString = "\t" + this.id + "\t" + this.name + "\t" + this.area + "\t" + this.population + "\t" + this.mainland;
             return myString;
         }
 
