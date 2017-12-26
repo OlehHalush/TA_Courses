@@ -33,7 +33,6 @@ namespace Presentation6_Task5_2
         // Add 10 items into a list and output them to console
         public void LetsGo()
         {
-
             string userInput = string.Empty;
             bool stayInLoop = true;
             Console.WriteLine("You have to enter 10 numbers.");
@@ -49,8 +48,8 @@ namespace Presentation6_Task5_2
                     Console.WriteLine("Please entered not a number.");
                 }
 
-                myList.Add(this.myInt);
-                foreach (int item in myList)
+                this.myList.Add(this.myInt);
+                foreach (int item in this.myList)
                 {
                     counter += 1;
                     if (counter == 10)
@@ -60,7 +59,7 @@ namespace Presentation6_Task5_2
                 }
             }
             while (stayInLoop == true);
-            Output();
+            this.Output();
         }
 
         // Output each item ina  list
@@ -68,10 +67,10 @@ namespace Presentation6_Task5_2
         {
             Console.WriteLine("================================");
             Console.WriteLine("Your list contains next numbers:");
-            myList.ToArray();
-            for (int i = 0; i < myList.Count; i++)
+            this.myList.ToArray();
+            for (int i = 0; i < this.myList.Count; i++)
             {
-                Console.WriteLine("Item with index '{0}' has value '{1}'.", i, myList[i]);
+                Console.WriteLine("Item with index '{0}' has value '{1}'.", i, this.myList[i]);
             }
         }
 
@@ -79,29 +78,30 @@ namespace Presentation6_Task5_2
         // =====Exception is thrown after removal some items ina  list=====
         public void RemoveValuesOver20()
         {
-            for (int i = 0; i <= myList.Count; i++)
+            for (int i = 0; i <= this.myList.Count; i++)
             {
-                if (myList[i] > 20)
+                if (this.myList[i] > 20)
                 {
-                    myList.Remove(myList[i]);
+                    this.myList.Remove(this.myList[i]);
                 }
             }
-            Output();
+
+            this.Output();
         }
 
         // Insert elements 1,-3,-4 in positions 2, 8, 5 and print collection
         public void InsertElements()
         {
-            myList.Insert(2, 1);
-            myList.Insert(7, -3);
-            myList.Insert(5, -4);
-            Output();
+            this.myList.Insert(2, 1);
+            this.myList.Insert(7, -3);
+            this.myList.Insert(5, -4);
+            this.Output();
         }
 
         public void GetSortedList()
         {
-            myList.Sort();
-            Output();
+            this.myList.Sort();
+            this.Output();
         }
         
         public static void Main(string[] args)
