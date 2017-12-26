@@ -49,21 +49,24 @@ namespace AdditionalTask2
             Country samoa = new Country(7, "Samoa", 2831, 179000, Mainland.Australia);
             Country tonha = new Country(1, "Tonha", 748, 107122, Mainland.Australia);
             Country[] countriesArray = new Country[] { ukraine, germany, poland, estonia, india, afghanistan, gana, kongo, samoa, tonha };
-            //Output not sorted list of countries
+            
+            // Output not sorted list of countries
             Console.WriteLine("Not sorted list of countries:");
             Console.WriteLine("\tID\tCountry\tArea\tPopulation\tMainland");
             foreach (Country country in countriesArray)
             {
                 country.Output();
             }
-            //Output sorted by ID list of countries
+            
+            // Output sorted by ID list of countries
             Console.WriteLine("Sorted list of countries by ID:");
             Console.WriteLine("\tID\tCountry\tArea\tPopulation\tMainland");
             foreach (Country country in countriesArray.OrderBy(Country => Country.ID))
             {
                 country.Output();
             }
-            //Output the population of Europian countries
+            
+            // Output the population of Europian countries
             foreach (Country country in countriesArray)
             {
                 if (country.Mainland == Mainland.Europe)
@@ -73,7 +76,8 @@ namespace AdditionalTask2
             }
 
             Console.WriteLine("The population of Europian countries is: {0}", europianPopulation);
-            //Output the area of countries in each mainland
+            
+            // Output the area of countries in each mainland
             foreach (Country country in countriesArray)
             {
                 switch (country.Mainland)
@@ -83,16 +87,19 @@ namespace AdditionalTask2
                             areaEurope += country.Area;
                             break;
                         }
+
                     case Mainland.Asia:
                         {
                             areaAsia += country.Area;
                             break;
                         }
+
                     case Mainland.Africa:
                         {
                             areaAfrica += country.Area;
                             break;
                         }
+
                     case Mainland.Australia:
                         {
                             areaAustralia += country.Area;
@@ -105,7 +112,8 @@ namespace AdditionalTask2
             Console.WriteLine("The area of countries in Asia is {0}.", areaAsia);
             Console.WriteLine("The area of countries in Africa is {0}.", areaAfrica);
             Console.WriteLine("The are of countries in Australia is {0}.", areaAustralia);
-            //Output the country with max population
+            
+            // Output the country with max population
             foreach (Country country in countriesArray)
             {
                 if (country.Population > maxPopulation)
@@ -116,10 +124,6 @@ namespace AdditionalTask2
             }
 
             Console.WriteLine("The max population is: {0} in {1}.", maxPopulation, maxPopulationCountry);
-
-
-
-
             Console.ReadKey();
         }
     }
