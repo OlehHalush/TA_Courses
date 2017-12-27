@@ -41,7 +41,7 @@ namespace Presentation6_Task5_2
             while (stayInLoop == true);
         }
 
-        // Output each item ina  list
+        // Output each item in a list
         public void Output()
         {
             this.myList.ToArray();
