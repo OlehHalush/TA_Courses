@@ -22,7 +22,7 @@ namespace Task16
             {
                 leftSideSum += intArray[i];
                 rightSideSum = 0;
-                for (int j = i + 1; j <= intArray.Length - 1; j++)
+                for (int j = i + 1; j < intArray.Length; j++)
                 {
                     rightSideSum += intArray[j];
                 }
@@ -41,7 +41,7 @@ namespace Task16
 
         public static void Main(string[] args)
         {
-            int[] someArray = new int[] { 1, 1, 1, 1, 1, 8, 2, 11 };
+            int[] someArray = new int[] { 1, 1, 1, 3 };
             GetIndexOfEquality(someArray);
         }
     }

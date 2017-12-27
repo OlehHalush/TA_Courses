@@ -26,12 +26,11 @@ namespace Task_14
             }
 
             Console.WriteLine("There are {0} unique characters in your string.", counter);
-            Console.ReadKey();
         }
 
         public static void Main(string[] args)
         {
-            GetAmountOfUniqueCharacters("qqwereeeeee");
+            GetAmountOfUniqueCharacters("1qqwereeeeee1");
             Console.ReadKey();
         }
     }
