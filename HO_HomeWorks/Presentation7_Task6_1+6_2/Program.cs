@@ -26,11 +26,27 @@ namespace Presentation7_Task6_1_6_2
                 myProgram.Divide();
                 myProgram.OutputIntoFile();
             }
+            catch (OutOfMemoryException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (ObjectDisposedException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             catch (FileNotFoundException ex)
             {
                 Console.WriteLine(ex.Message);
             }
             catch (DirectoryNotFoundException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (PathTooLongException ex)
             {
                 Console.WriteLine(ex.Message);
             }

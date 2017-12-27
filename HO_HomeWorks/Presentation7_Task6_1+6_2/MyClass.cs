@@ -49,6 +49,11 @@ namespace Presentation7_Task6_1_6_2
 
         public void Divide()
         {
+            if (this.number1 == 0)
+            {
+                throw new ArgumentNullException("Dividing 0 always results in 0.");
+            }
+
             if (this.number2 == 0)
             {
                 throw new ArgumentNullException("Division by 0 is not allowed.");
