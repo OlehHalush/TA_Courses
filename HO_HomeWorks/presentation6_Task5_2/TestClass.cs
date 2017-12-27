@@ -11,7 +11,7 @@ namespace Presentation6_Task5_2
         private List<int> myList = new List<int>();
 
         // Add 10 items into a list and output them to console
-        public void LetsGo()
+        public void InputNumbers()
         {
             string userInput = string.Empty;
             bool stayInLoop = true;
@@ -44,8 +44,6 @@ namespace Presentation6_Task5_2
         // Output each item ina  list
         public void Output()
         {
-            Console.WriteLine("================================");
-            Console.WriteLine("Your list contains next numbers:");
             this.myList.ToArray();
             for (int i = 0; i < this.myList.Count; i++)
             {

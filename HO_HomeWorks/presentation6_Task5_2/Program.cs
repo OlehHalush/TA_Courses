@@ -20,13 +20,21 @@ namespace Presentation6_Task5_2
         public static void Main(string[] args)
         {
             TestClass myProgram = new TestClass();
-            myProgram.LetsGo();
+            myProgram.InputNumbers();
+            Console.WriteLine("===================================");
+            Console.WriteLine("Your list contains numbers:");
             myProgram.Output();
             myProgram.RemoveValuesOver20();
+            Console.WriteLine("===================================");
+            Console.WriteLine("Your list after removal is:");
             myProgram.Output();
             myProgram.InsertElements();
+            Console.WriteLine("===================================");
+            Console.WriteLine("Your lsit after insert is:");
             myProgram.Output();
             myProgram.GetSortedList();
+            Console.WriteLine("===================================");
+            Console.WriteLine("This is your sorted list:");
             myProgram.Output();
             Console.ReadKey();
         }
