@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.7
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation1_Task1", "Presentation1_Task1\Presentation1_Task1.csproj", "{D35F0D20-A1AF-440E-A4FA-CFEFCF0ED88F}"
 EndProject
@@ -90,6 +90,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation6_Task5_1", "Presentation6_Task5_1\Presentation6_Task5_1.csproj", "{CF234342-C514-41CC-911F-4ED5FCEAE0C2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation6_Task5_2", "presentation6_Task5_2\Presentation6_Task5_2.csproj", "{6C7E0D4B-65B8-42E5-AF94-166551F1CE89}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9CD21A89-E67E-4EC9-8B0A-8A74CADFC979}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testproject", "Testproject\Testproject.csproj", "{89038BA4-1E50-42F1-8CB6-A979BF6BF69D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -229,6 +233,10 @@ Global
 		{6C7E0D4B-65B8-42E5-AF94-166551F1CE89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C7E0D4B-65B8-42E5-AF94-166551F1CE89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C7E0D4B-65B8-42E5-AF94-166551F1CE89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89038BA4-1E50-42F1-8CB6-A979BF6BF69D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89038BA4-1E50-42F1-8CB6-A979BF6BF69D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89038BA4-1E50-42F1-8CB6-A979BF6BF69D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89038BA4-1E50-42F1-8CB6-A979BF6BF69D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -267,5 +275,6 @@ Global
 		{3525F287-EBD6-4EE1-B9BA-559928ED4F53} = {DB7E7856-1ED2-45EA-8888-6BB2B783DADD}
 		{CF234342-C514-41CC-911F-4ED5FCEAE0C2} = {F2297B35-36B9-4B4D-8AEB-97496ECE5FD6}
 		{6C7E0D4B-65B8-42E5-AF94-166551F1CE89} = {F2297B35-36B9-4B4D-8AEB-97496ECE5FD6}
+		{89038BA4-1E50-42F1-8CB6-A979BF6BF69D} = {9CD21A89-E67E-4EC9-8B0A-8A74CADFC979}
 	EndGlobalSection
 EndGlobal
