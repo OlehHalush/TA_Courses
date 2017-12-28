@@ -9,6 +9,7 @@ namespace Task7
     public class Teacher : Staff
     {
         private string subject;
+
         override public string Name
         {
             get
@@ -21,9 +22,10 @@ namespace Task7
         {
             this.subject = subject;
         }
+
         override public void Print()
         {
-            Console.WriteLine("Person {0} has salary: ${1} and teaches {2}", Name, Salary, subject);
+            Console.WriteLine("Person {0} has salary: ${1} and teaches {2}", this.Name, this.Salary, this.subject);
         }
     }
 }

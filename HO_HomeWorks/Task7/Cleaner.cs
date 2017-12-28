@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Task7
 {
-    class Cleaner : Staff
+    public class Cleaner : Staff
     {
         private string room;
+
         override public string Name
         {
             get
@@ -16,13 +17,15 @@ namespace Task7
                 return base.Name + "(Cleaner)";
             }
         }
+
         public Cleaner(string name, int salary, string room) : base(name, salary)
         {
             this.room = room;
         }
+
         override public void Print()
         {
-            Console.WriteLine("Person {0} has salary: ${1} and cleans room {2}", Name, Salary, room);
+            Console.WriteLine("Person {0} has salary: ${1} and cleans room {2}", this.Name, this.Salary, this.room);
         }
     }
 }

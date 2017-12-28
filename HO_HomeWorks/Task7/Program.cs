@@ -16,34 +16,43 @@ using System.Threading.Tasks;
 
 namespace Task7
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            Person myPerson = new Person("Oleg");
+
+            // Create list, add objects of each type and output it
             List<Person> myList = new List<Person>();
-            myList.Add(new Person("Oleg"));
+            myList.Add(myPerson);
+            myList.Add(new Cleaner("Oksana", 25, "1002B"));
             myList.Add(new Staff("Ivan", 100));
             myList.Add(new Teacher("Olga", 50, "Math"));
-            myList.Add(new Cleaner("Oksana", 25, "1002B"));
+            Console.WriteLine("--------------------------------------------------------------------");
+            Console.WriteLine("List of persons:");
             foreach (Person item in myList)
             {
                 item.Print();
             }
 
-            Console.WriteLine("Enter some name:");
-            string someName = Console.ReadLine();
-            foreach (Person item in myList)
-            {
-                if (item.Name == someName)
-                {
-                    item.Print();
-                }
-            }
+            // Enter name and if such name exists output the info
+            Console.WriteLine("--------------------------------------------------------------------");
+            Console.WriteLine("Does such person exist?");
+            myPerson.GetInfoAboutExistingPerson(myList);
 
+            // Sort list by name and output it
+            Console.WriteLine("--------------------------------------------------------------------");
+            Console.WriteLine("Sorted list:");
             myList.Sort();
             foreach (Person item in myList)
             {
                 item.Print();
+            }
+
+            // To Do: implement IEnumerable interface for the last task
+            List<Staff> myStaffList = new List<Staff>();
+            foreach (Person item in myList)
+            {
             }
         }
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task7
 {
-    public class Staff : Person
+    public class Staff : Person, IComparable
     {
         private int salary;
 
@@ -14,13 +14,15 @@ namespace Task7
         {
             get
             {
-                return salary;
+                return this.salary;
             }
         }
+
         public Staff(string name, int salary) : base(name)
         {
             this.salary = salary;
         }
+
         override public string Name
         {
             get
@@ -28,10 +30,10 @@ namespace Task7
                 return base.Name + "(Staff)";
             }
         }
+
         override public void Print()
         {
-            Console.WriteLine("Person {0} has salary: ${1}", Name, this.salary);
+            Console.WriteLine("Person {0} has salary: ${1}", this.Name, this.salary);
         }
     }
-
 }
