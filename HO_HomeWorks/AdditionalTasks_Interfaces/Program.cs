@@ -17,7 +17,8 @@ namespace AdditionalTasks_Interfaces
         {
             List<Person> myListOfPersons = new List<Person>();
             Person myPerson = new Person("Oleg", 28);
-            for (int i = 0; i < 9; i++)
+            myListOfPersons.Add(myPerson);
+            for (int i = 1; i < 11; i++)
             {
                 myListOfPersons.Add((Person)myPerson.Clone());
             }
