@@ -51,7 +51,11 @@ namespace AdditionalTasks_Interfaces
 
         public object Clone()
         {
-            Person newPerson = this;
+            Person newPerson = new Person();
+            {
+                newPerson.name = this.name;
+                newPerson.age = this.age;
+            };
             return newPerson;
         }
 
