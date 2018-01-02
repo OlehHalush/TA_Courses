@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation1_Task1", "Presentation1_Task1\Presentation1_Task1.csproj", "{D35F0D20-A1AF-440E-A4FA-CFEFCF0ED88F}"
 EndProject
@@ -102,6 +102,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task7", "Task7", "{CA58C54D-431B-4052-9895-3DB9FF6B88AA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task7", "Task7\Task7.csproj", "{643044AE-1749-454D-AA39-8CF316FD030E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AdditionalTasks_Collections", "AdditionalTasks_Collections", "{C6B2039F-7194-426A-8B95-BADA6F43F1D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdditionalTask_Collections", "AdditionalTask_Collections\AdditionalTask_Collections.csproj", "{297E8288-DA32-45FB-A15C-A9BBEC51C17E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -253,6 +257,10 @@ Global
 		{643044AE-1749-454D-AA39-8CF316FD030E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{643044AE-1749-454D-AA39-8CF316FD030E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{643044AE-1749-454D-AA39-8CF316FD030E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{297E8288-DA32-45FB-A15C-A9BBEC51C17E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{297E8288-DA32-45FB-A15C-A9BBEC51C17E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{297E8288-DA32-45FB-A15C-A9BBEC51C17E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{297E8288-DA32-45FB-A15C-A9BBEC51C17E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -294,5 +302,6 @@ Global
 		{89038BA4-1E50-42F1-8CB6-A979BF6BF69D} = {9CD21A89-E67E-4EC9-8B0A-8A74CADFC979}
 		{4DE29F1A-A56D-4BDB-A34B-9932FBDBB8C6} = {08CD585A-732E-4933-8760-C846DEAEB69E}
 		{643044AE-1749-454D-AA39-8CF316FD030E} = {CA58C54D-431B-4052-9895-3DB9FF6B88AA}
+		{297E8288-DA32-45FB-A15C-A9BBEC51C17E} = {C6B2039F-7194-426A-8B95-BADA6F43F1D9}
 	EndGlobalSection
 EndGlobal
