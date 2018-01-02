@@ -103,9 +103,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task7", "Task7", "{CA58C54D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task7", "Task7\Task7.csproj", "{643044AE-1749-454D-AA39-8CF316FD030E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AdditionalTasks_Collections", "AdditionalTasks_Collections", "{C6B2039F-7194-426A-8B95-BADA6F43F1D9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AdditionalTasks_InterfacesAndCollections", "AdditionalTasks_InterfacesAndCollections", "{C6B2039F-7194-426A-8B95-BADA6F43F1D9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdditionalTask_Collections", "AdditionalTask_Collections\AdditionalTask_Collections.csproj", "{297E8288-DA32-45FB-A15C-A9BBEC51C17E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdditionalTasks_Interfaces", "AdditionalTasks_Interfaces\AdditionalTasks_Interfaces.csproj", "{57C45B25-186E-4930-8A79-CE4033E8E875}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -261,6 +263,10 @@ Global
 		{297E8288-DA32-45FB-A15C-A9BBEC51C17E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{297E8288-DA32-45FB-A15C-A9BBEC51C17E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{297E8288-DA32-45FB-A15C-A9BBEC51C17E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57C45B25-186E-4930-8A79-CE4033E8E875}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57C45B25-186E-4930-8A79-CE4033E8E875}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57C45B25-186E-4930-8A79-CE4033E8E875}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57C45B25-186E-4930-8A79-CE4033E8E875}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -303,5 +309,6 @@ Global
 		{4DE29F1A-A56D-4BDB-A34B-9932FBDBB8C6} = {08CD585A-732E-4933-8760-C846DEAEB69E}
 		{643044AE-1749-454D-AA39-8CF316FD030E} = {CA58C54D-431B-4052-9895-3DB9FF6B88AA}
 		{297E8288-DA32-45FB-A15C-A9BBEC51C17E} = {C6B2039F-7194-426A-8B95-BADA6F43F1D9}
+		{57C45B25-186E-4930-8A79-CE4033E8E875} = {C6B2039F-7194-426A-8B95-BADA6F43F1D9}
 	EndGlobalSection
 EndGlobal
