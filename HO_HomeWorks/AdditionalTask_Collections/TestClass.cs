@@ -71,9 +71,11 @@ namespace AdditionalTask_Collections
 
         public void Output()
         {
+            int counter = 1;
             foreach (string someString in this.myListOfStrings)
             {
-                Console.WriteLine(someString);
+                Console.WriteLine("{0} string is \"{1}\" and it has {2} characters.", counter, someString, someString.Length);
+                counter += 1;
             }
         }
     }
