@@ -89,7 +89,6 @@ namespace Task8_LINQ
             {
                 Console.WriteLine(item);
             }
-
         }
     }
 }
