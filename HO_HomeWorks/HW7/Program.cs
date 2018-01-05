@@ -41,22 +41,32 @@ namespace HW7
 
             // ToDo
             // b) Find shape with the largest perimeter and print its name. 
-            double maxPerim = 0;
-            foreach (Shape someShape in listOfShapes)
-            {
-                if (maxPerim <= someShape.GetPerimeter())
-                {
-                    maxPerim = someShape.GetPerimeter();
-                }
-            }
-            Console.WriteLine(maxPerim);
-            foreach (Shape someSHape in listOfShapes)
-            {
-                if (someSHape.GetPerimeter() == maxPerim)
-                {
-                    Console.WriteLine(someSHape.Name);
-                }
-            }
+            //double maxPerim = 0;
+            //foreach (Shape someShape in listOfShapes)
+            //{
+            //    if (maxPerim <= someShape.GetPerimeter())
+            //    {
+            //        maxPerim = someShape.GetPerimeter();
+            //    }
+            //}
+            //Console.WriteLine(maxPerim);
+            //foreach (Shape someSHape in listOfShapes)
+            //{
+            //    if (someSHape.GetPerimeter() == maxPerim)
+            //    {
+            //        Console.WriteLine(someSHape.Name);
+            //    }
+            //}
+
+            // =================================================================================================
+
+            var maximum = listOfShapes.Max(c => c.GetPerimeter());
+            var someName = listOfShapes.Where(c => c.GetPerimeter() == maximum).Select (s => s.Name);
+            Console.WriteLine("Last string: " + someName);
+
+            // =================================================================================================
+
+
             //var shapName = from s in listOfShapes
             //               where s.GetPerimeter() == maxPerim
             //               select s.Name.ToString();

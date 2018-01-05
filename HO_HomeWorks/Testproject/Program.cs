@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 using System.IO;
 
 /*
-Create method Div(), which calculates the dividing of two  double numbers. 
-In Main input  2 double numbers and call this method. Catch appropriative exceptions. 
 */
 
 namespace Testproject
@@ -16,7 +14,14 @@ namespace Testproject
     {
         static void Main(string[] args)
         {
-
+            string[] stringArray = { "Hi", "Bye", "Hello", "GoodBye" };
+            var items = from s in stringArray
+                        where s.EndsWith("e")
+                        select s;
+            foreach (string myString in items)
+            {
+                Console.WriteLine(myString);
+            }
         }
     }
 }
