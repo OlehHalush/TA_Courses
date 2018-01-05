@@ -18,14 +18,15 @@ namespace Task10_2
     {
         static void Main(string[] args)
         {
-            Student stud1 = new Student();
-            Parent dad1 = new Parent();
-            stud1.MarksChanged += dad1.OnMarkChange;
-            stud1.AddMark(5);
-            stud1.AddMark(4);
-            Parent mam = new Parent();
-            stud1.MarksChanged += mam.OnMarkChange;
-            stud1.AddMark(2);
+            Student student = new Student();
+            Parent daddy = new Parent();
+            Parent mommy = new Parent();
+            AccountingDepartment accounter = new AccountingDepartment();
+            student.MarksChanged += daddy.SendSMS;
+            student.MarksChanged += mommy.SendSMS;
+            student.MarksChanged += accounter.PayScholarship;
+            student.AddMark(2);
+            student.AddMark(3);
         }
     }
 }

@@ -19,6 +19,7 @@ namespace Task10_2
             {
                 MarksChanged(mark);
             }
+
         }
     }
 }

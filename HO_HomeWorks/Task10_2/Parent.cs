@@ -8,7 +8,7 @@ namespace Task10_2
 {
     class Parent
     {
-        public void OnMarkChange(int i)
+        public void SendSMS(int i)
         {
             Console.WriteLine("SMS");
         }
