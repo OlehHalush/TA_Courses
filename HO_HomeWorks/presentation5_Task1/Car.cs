@@ -64,7 +64,7 @@ namespace Presentation5_Task1
 
         public void Print()
         {
-            Console.WriteLine(ToString());
+            Console.WriteLine(this.ToString());
         }
 
         public double ChangePrice(double price)
