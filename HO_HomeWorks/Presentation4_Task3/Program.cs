@@ -15,12 +15,12 @@ namespace Presentation4_Task3
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("What would you like to drink? Cofee/Tea/Juice/Water");
+            Console.WriteLine("What would you like to drink? Coffee/Tea/Juice/Water");
             string userInput = Console.ReadLine();
             switch (userInput.ToLower())
             {
-                case "cofee":
-                    Console.WriteLine("Cofee will cost you 2$.");
+                case "coffee":
+                    Console.WriteLine("Coffee will cost you 2$.");
                     break;
                 case "tea":
                     Console.WriteLine("Tea will cost you 1$.");

@@ -14,8 +14,8 @@ namespace Presentation4_Task6
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Please enter a number:");
             double sum = 0;
+            Console.WriteLine("Please enter a number:");
             string userNumber = Console.ReadLine();
             bool isUserInputANumber = int.TryParse(userNumber, out int input);
             if (isUserInputANumber == true)

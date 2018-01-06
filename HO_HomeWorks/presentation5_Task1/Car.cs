@@ -36,6 +36,8 @@ namespace Presentation5_Task1
 
         private string name;
         private string color;
+        private double price;
+        private const string CompanyName = "GiveMeAllTheMoNey";
 
         public string Color
         {
@@ -49,9 +51,6 @@ namespace Presentation5_Task1
                 this.color = value;
             }
         }
-
-        private double price;
-        private const string CompanyName = "GiveMeAllTheMoNey";
 
         public void Input()
         {
@@ -68,16 +67,16 @@ namespace Presentation5_Task1
             Console.WriteLine(ToString());
         }
 
-        public double ChangePrice(double x)
+        public double ChangePrice(double price)
         {
-            this.price = ToPersentage(x, this.price);
+            this.price = ToPersentage(price, this.price);
             return this.price;
         }
 
-        public static double ToPersentage(double percent, double total)
+        public static double ToPersentage(double pers, double total)
         {
-            double pers = total + ((percent / 100) * total);
-            return pers;
+            double persent = total + ((pers / 100) * total);
+            return persent;
         }
 
         public override string ToString()

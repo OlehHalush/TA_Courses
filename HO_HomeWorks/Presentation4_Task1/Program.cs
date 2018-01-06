@@ -19,11 +19,11 @@ namespace Presentation4_Task1
             int a = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Please enter second number:");
             int b = Convert.ToInt32(Console.ReadLine());
-            for (int i = a; a <= b; a++)
+            for (int i = a;  i <= b; i++)
             {
-                if (a % 3 == 0)
+                if (i % 3 == 0)
                 {
-                    Console.WriteLine(a);
+                    Console.WriteLine(i);
                 }
             }
 

@@ -20,6 +20,8 @@ namespace Presentation3_Task1_2
             int firstNumberAfterComa = (int)((userInput % 1) * 10);
             int secondNumberAfterComa = (int)((userInput % 1) * 100) % 10;
             int resultOfAddition = firstNumberAfterComa + secondNumberAfterComa;
+            Console.WriteLine(firstNumberAfterComa);
+            Console.WriteLine(secondNumberAfterComa);
             Console.WriteLine(resultOfAddition);
             Console.ReadKey();
         }

@@ -20,10 +20,10 @@ namespace Presentation4_Task7
             bool isUserInputANumber = int.TryParse(userNumber, out int input);
             if (isUserInputANumber == true)
             {
-                foreach (char a in userNumber)
+                foreach (char digit in userNumber)
                 {
-                    double b = char.GetNumericValue(a);
-                    if (b % 2 != 0)
+                    double convertedCharToDigit = char.GetNumericValue(digit);
+                    if (convertedCharToDigit % 2 != 0)
                     {
                         areDigitsPair = false;
                         break;

@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 Define integer variables a and b.
 Read values a and b from Console and calculate: a+b, a-b, a*b, a/b.
 Output obtained results.
- */
+*/
+
 namespace Presentation1_Task1
 {
     public class Program
@@ -35,21 +36,33 @@ namespace Presentation1_Task1
         {
             double convertedAValue = Convert.ToDouble(a);
             double convertedBValue = Convert.ToDouble(b);
+            if (convertedBValue == 0)
+            {
+                throw new ArgumentNullException("Division by 0 is not allowed.");
+            }
+
             double resultOfDivision = convertedAValue / convertedBValue;
             Console.WriteLine("The result of division is: {0}", resultOfDivision);
         }
 
         public static void Main(string[] args)
         {
-            Console.WriteLine("Please enter a value 'a', it should be an int:");
-            int a = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Please enter a value 'b', it should be an int:");
-            int b = Convert.ToInt32(Console.ReadLine());
-            Addition(a, b);
-            Subtraction(a, b);
-            Multiplication(a, b);
-            Division(a, b);
-            Console.ReadLine();
+            try
+            {
+                Console.WriteLine("Please enter a value 'a', it should be an int:");
+                int a = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Please enter a value 'b', it should be an int:");
+                int b = Convert.ToInt32(Console.ReadLine());
+                Addition(a, b);
+                Subtraction(a, b);
+                Multiplication(a, b);
+                Division(a, b);
+                Console.ReadLine();
+            }
+            catch (ArgumentNullException)
+            {
+                Console.WriteLine("Divison by 0 is not allowed.");
+            }
         }
     }
 }

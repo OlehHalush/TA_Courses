@@ -15,10 +15,10 @@ namespace Presentation4_Task4
     {
         public static void Main(string[] args)
         {
-            int[] intArray = new int[] { 8, 8, -1, 2, 5 };
-            int arithmeticMean = 0;
-            int sum = 0;
-            int count = 0;
+            int[] intArray = new int[] { 30, 3, -1, 2, 5 };
+            double arithmeticMean = 0;
+            double sum = 0;
+            double count = 0;
             foreach (int a in intArray)
             {
                 if (a < 0)

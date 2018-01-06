@@ -15,7 +15,7 @@ namespace Presentation1_Task4
     {
         public static bool IsNumberPositive(int a)
         {
-            if (a > 0)
+            if (a >= 0)
             {
                 return true;
             }
@@ -30,10 +30,8 @@ namespace Presentation1_Task4
             Console.WriteLine("Enter 2 numbers:");
             int firstNumber = Convert.ToInt32(Console.ReadLine());
             int secondNumber = Convert.ToInt32(Console.ReadLine());
-            bool isFirstNumberPositive = IsNumberPositive(firstNumber);
-            bool isSecondNumberPositive = IsNumberPositive(secondNumber);
-            Console.WriteLine("Is your first number positive? - {0}.", isFirstNumberPositive);
-            Console.WriteLine("Is your second number positive? - {0}.", isSecondNumberPositive);
+            Console.WriteLine("Is your first number positive? - {0}.", IsNumberPositive(firstNumber));
+            Console.WriteLine("Is your second number positive? - {0}.", IsNumberPositive(secondNumber));
             Console.ReadKey();
         }
     }
