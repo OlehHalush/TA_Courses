@@ -18,6 +18,12 @@ namespace Presentation3_HW1_Task4
         public string Name;
         public string Mark;
         public byte Age;
+
+        public override string ToString()
+        {
+            string myString = "Dog's name is " + this.Name + ", mark is " + this.Mark + " and age is " + this.Age;
+            return myString;
+        }
     }
 
     public class Program
@@ -31,7 +37,7 @@ namespace Presentation3_HW1_Task4
             myDog.Mark = Console.ReadLine();
             Console.WriteLine("Please enter dog's age:");
             myDog.Age = Convert.ToByte(Console.ReadLine());
-            Console.WriteLine("Dog's name is {0}, mark is {1} and age is {2}", myDog.Name, myDog.Mark, myDog.Age);
+            Console.WriteLine(myDog.ToString());
             Console.ReadKey();
         }
     }

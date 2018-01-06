@@ -26,6 +26,7 @@ namespace HW7
             {
                 return this.side;
             }
+
             set
             {
                 this.side = value;
@@ -38,6 +39,7 @@ namespace HW7
             {
                 return this.radius;
             }
+
             set
             {
                 this.radius = value;

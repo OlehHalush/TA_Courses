@@ -19,7 +19,7 @@ namespace Presentation3_HW1_Task3
         PaymentRequired,
         Forbidden,
         NotFound,
-        GoogleWillHelpYou
+        Google_Will_Help_You
     }
 
     public class Program
@@ -47,7 +47,7 @@ namespace Presentation3_HW1_Task3
                     error = HTTPError.NotFound;
                     break;
                 default:
-                    error = HTTPError.GoogleWillHelpYou;
+                    error = HTTPError.Google_Will_Help_You;
                     break;
             }
 

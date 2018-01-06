@@ -30,6 +30,8 @@ namespace Presentation5_HW4
     {
         public Person()
         {
+            this.name = "Not Defined";
+            this.birthYear = 0;
         }
 
         public Person(string name, int birthYear)
@@ -39,6 +41,8 @@ namespace Presentation5_HW4
         }
 
         private string name;
+        private int birthYear;
+        private bool isNameDuplicated = false;
 
         public string Name
         {
@@ -53,8 +57,6 @@ namespace Presentation5_HW4
             }
         }
 
-        private int birthYear;
-
         public int BirthYear
         {
             get
@@ -63,18 +65,16 @@ namespace Presentation5_HW4
             }
         }
 
-        private bool isNamsDuplicated = false;
-
         public bool IsNameDuplicate
         {
             get
             {
-                return this.isNamsDuplicated;
+                return this.isNameDuplicated;
             }
 
             set
             {
-                this.isNamsDuplicated = value;
+                this.isNameDuplicated = value;
             }
         }
 

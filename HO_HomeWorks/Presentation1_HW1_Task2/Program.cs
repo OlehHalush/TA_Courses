@@ -15,9 +15,9 @@ Read age and write whole information
 
 namespace Presentation1_HW1_Task2
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("What is your name?");
             string name = Console.ReadLine();

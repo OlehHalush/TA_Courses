@@ -15,12 +15,11 @@ b) Find shape with the largest perimeter and print its name.
 
 namespace HW7
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             // Create and output 10 shapes
-
             List<Shape> listOfShapes = new List<Shape>();
             listOfShapes.Add(new Circle("Circle", 1));
             listOfShapes.Add(new Square("Square", 1, 1));
@@ -39,38 +38,29 @@ namespace HW7
                 Console.WriteLine("\t" + someShape.Name + "\t" + someShape.GetArea() + "\t" + someShape.GetPerimeter());
             }
 
-            // ToDo
-            // b) Find shape with the largest perimeter and print its name. 
-            //double maxPerim = 0;
-            //foreach (Shape someShape in listOfShapes)
-            //{
-            //    if (maxPerim <= someShape.GetPerimeter())
-            //    {
-            //        maxPerim = someShape.GetPerimeter();
-            //    }
-            //}
-            //Console.WriteLine(maxPerim);
-            //foreach (Shape someSHape in listOfShapes)
-            //{
-            //    if (someSHape.GetPerimeter() == maxPerim)
-            //    {
-            //        Console.WriteLine(someSHape.Name);
-            //    }
-            //}
+            // Find shape with the largest perimeter and print its name.
+            Console.WriteLine("\nGET SHAPE WITH MAX PERIMETER");
+            double maxPerim = 0;
+            string name = string.Empty;
+            foreach (Shape someShape in listOfShapes)
+            {
+                if (maxPerim <= someShape.GetPerimeter())
+                {
+                    maxPerim = someShape.GetPerimeter();
+                    name = someShape.Name;
+                }
+            }
 
-            // =================================================================================================
+            Console.WriteLine("The max permimeter {0} is in a {1}.", maxPerim, name);
 
-            var maximum = listOfShapes.Max(c => c.GetPerimeter());
-            var someName = listOfShapes.Where(c => c.GetPerimeter() == maximum).Select (s => s.Name);
-            Console.WriteLine("Last string: " + someName);
-
-            // =================================================================================================
-
-
-            //var shapName = from s in listOfShapes
-            //               where s.GetPerimeter() == maxPerim
-            //               select s.Name.ToString();
-            //Console.WriteLine(shapName);
+            // Sort shapes by area and print obtained list
+            Console.WriteLine("\nGET SORTED LIST BY AREA");
+            listOfShapes.Sort();
+            Console.WriteLine("\tName\tArea");
+            foreach (Shape someShape in listOfShapes)
+            {
+                Console.WriteLine("\t" + someShape.Name + "\t" + someShape.GetArea());
+            }
         }
     }
 }

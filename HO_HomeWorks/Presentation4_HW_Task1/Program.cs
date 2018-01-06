@@ -14,6 +14,7 @@ namespace Presentation4_HW_Task1
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine("Enter some string:");
             string userInput = Console.ReadLine();
             int counterA = 0;
             int counterO = 0;

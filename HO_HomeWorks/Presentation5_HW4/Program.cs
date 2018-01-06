@@ -31,6 +31,7 @@ namespace Presentation5_HW4
     {
         public static void Main(string[] args)
         {
+            // Create and output all people
             Person person1 = new Person("Oleg", 1989);
             Person person2 = new Person("Bogdan", 2000);
             Person person3 = new Person("Oleg", 1990);
@@ -44,6 +45,9 @@ namespace Presentation5_HW4
                 person.Output();
             }
 
+            // Change names for people younger 16 and output all the people 
+            Console.WriteLine("\nInfo about each person after checking for persons younger than 16:");
+            Console.WriteLine("People younger then 16 will have name replaced with \"Very Young\".");
             foreach (Person person in personsArray)
             {
                 if (person.GetAge(person.BirthYear) < 16)
@@ -52,13 +56,13 @@ namespace Presentation5_HW4
                 }
             }
 
-            Console.WriteLine("Info about each persons after checking for persons younger than 16:");
             foreach (Person person in personsArray)
             {
                 person.Output();
             }
 
-            Console.WriteLine("Info about peoples with the same names:");
+            // Output info about people with the same names
+            Console.WriteLine("\nInfo about peoples with the same names:");
             for (int i = 0; i <= personsArray.Length - 1; i++)
             {
                 string userName = personsArray[i].Name;

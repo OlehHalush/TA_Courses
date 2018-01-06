@@ -17,6 +17,7 @@ namespace Presentation1_HW1_Task1
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine("Please enter a length of square's side:");
             int a = Convert.ToInt32(Console.ReadLine());
             int squareArea = Convert.ToInt32(Math.Pow(a, 2));
             int squarePerimeter = 4 * a;
