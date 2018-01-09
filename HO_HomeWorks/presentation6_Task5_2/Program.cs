@@ -30,13 +30,12 @@ namespace Presentation6_Task5_2
             myProgram.Output();
             myProgram.InsertElements();
             Console.WriteLine("===================================");
-            Console.WriteLine("Your lsit after insert is:");
+            Console.WriteLine("Your list after insert is:");
             myProgram.Output();
             myProgram.GetSortedList();
             Console.WriteLine("===================================");
             Console.WriteLine("This is your sorted list:");
             myProgram.Output();
-            Console.ReadKey();
         }
     }
 }

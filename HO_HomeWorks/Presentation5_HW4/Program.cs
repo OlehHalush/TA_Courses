@@ -63,10 +63,10 @@ namespace Presentation5_HW4
 
             // Output info about people with the same names
             Console.WriteLine("\nInfo about peoples with the same names:");
-            for (int i = 0; i <= personsArray.Length - 1; i++)
+            for (int i = 0; i < personsArray.Length; i++)
             {
                 string userName = personsArray[i].Name;
-                for (int j = i + 1; j <= personsArray.Length - 1; j++)
+                for (int j = i + 1; j < personsArray.Length; j++)
                 {
                     if (userName == personsArray[j].Name && personsArray[j].IsNameDuplicate == false)
                     {
@@ -80,8 +80,6 @@ namespace Presentation5_HW4
                     }
                 }
             }
-
-            Console.ReadKey();
         }
     }
 }

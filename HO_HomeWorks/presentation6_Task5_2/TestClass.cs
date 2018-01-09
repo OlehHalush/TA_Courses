@@ -25,10 +25,11 @@ namespace Presentation6_Task5_2
                 bool isNumber = int.TryParse(userInput, out int myInt);
                 if (isNumber != true)
                 {
-                    Console.WriteLine("Please entered not a number.");
+                    Console.WriteLine("You entered not a number.");
                 }
-
-                this.myList.Add(myInt);
+                {
+                    this.myList.Add(myInt);
+                }
                 foreach (int item in this.myList)
                 {
                     counter += 1;

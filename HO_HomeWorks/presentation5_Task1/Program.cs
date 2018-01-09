@@ -28,9 +28,9 @@ namespace Presentation5_Task1
             Car myFirstCar = new Car("Opel", "Green", 200);
             Car mySecondCar = new Car("Renault", "Black", 400);
             Car myThirdCar = new Car("Mercedes", "White", 1000);
-            myFirstCar.ChangePrice(10);
-            mySecondCar.ChangePrice(10);
-            myThirdCar.ChangePrice(10);
+            myFirstCar.ChangePriceUp(10);
+            mySecondCar.ChangePriceDown(10);
+            myThirdCar.ChangePriceDown(10);
             myThirdCar.Color = "Silver";
         }
     }

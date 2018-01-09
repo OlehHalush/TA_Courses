@@ -67,15 +67,27 @@ namespace Presentation5_Task1
             Console.WriteLine(this.ToString());
         }
 
-        public double ChangePrice(double price)
+        public double ChangePriceUp(double price)
         {
-            this.price = ToPersentage(price, this.price);
+            this.price = UpOnPersentage(price, this.price);
             return this.price;
         }
 
-        public static double ToPersentage(double pers, double total)
+        public double ChangePriceDown(double price)
+        {
+            this.price = DownOnPersentage(price, this.price);
+            return this.price;
+        }
+
+        public static double UpOnPersentage(double pers, double total)
         {
             double persent = total + ((pers / 100) * total);
+            return persent;
+        }
+
+        public static double DownOnPersentage(double pers, double total)
+        {
+            double persent = total - ((pers / 100) * total);
             return persent;
         }
 
