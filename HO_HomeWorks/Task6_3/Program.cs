@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 
 /*
-Write into file ‘DirectoryC.txt’ information(name, type, size) about all directories and files from disc C on your computer.Catch appropriative exceptions.
+Write into file ‘DirectoryC.txt’ information(name, type, size) about all directories and files from disc C on your computer.Catch appropriative exceptions. 
 */
 
 namespace Task6_3
