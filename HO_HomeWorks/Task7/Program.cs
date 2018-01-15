@@ -50,10 +50,12 @@ namespace Task7
             }
 
             // To Do: implement IEnumerable interface for the last task
-            List<Staff> myStaffList = new List<Staff>();
-            foreach (Person item in myList)
-            {
-            }
+            //List<Staff> myStaffList = new List<Staff>();
+            //foreach (Person item in myList)
+            //{
+            //    string type = item.GetType().ToString();
+            //    Console.WriteLine(type);
+            //}
         }
     }
 }

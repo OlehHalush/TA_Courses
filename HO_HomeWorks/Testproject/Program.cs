@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
 
 /*
 */
@@ -14,14 +17,10 @@ namespace Testproject
     {
         static void Main(string[] args)
         {
-            string[] stringArray = { "Hi", "Bye", "Hello", "GoodBye" };
-            var items = from s in stringArray
-                        where s.EndsWith("e")
-                        select s;
-            foreach (string myString in items)
-            {
-                Console.WriteLine(myString);
-            }
+            IWebDriver driver = new ChromeDriver();
+            driver.Navigate().GoToUrl("http://283-taqc.ml/upload/");
+            IWebElement search = driver.FindElement(By.Name("search"));
+            search.SendKeys("Mac");
         }
     }
 }
