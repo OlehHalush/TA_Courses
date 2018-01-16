@@ -3,23 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NUnit.Framework;
 using OpenQA;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using NUnit.Framework;
 
-namespace DesktopCategoryTest
+namespace DesktopCategoryTestSortItems
 {
     public class Program
     {
-        public void OpenDesktopPageUsingShowAll()
+        public void SortItems()
         { }
 
-        public void CheckAmountOfItems()
-        { }
-
-        public static void Main(string[] args)
-        { }
+        static void Main(string[] args)
+        {
+        }
     }
 }
-
