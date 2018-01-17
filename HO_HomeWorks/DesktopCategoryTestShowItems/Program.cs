@@ -8,13 +8,10 @@ using OpenQA;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace DesktopCategoryTestShowItems
+namespace DesktopCategoryShowItemsTest
 {
     class Program
     {
-        public void Show15Items()
-        { }
-
         static void Main(string[] args)
         {
         }

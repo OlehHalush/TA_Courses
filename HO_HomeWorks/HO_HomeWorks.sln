@@ -133,17 +133,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task6_3", "Task6_3\Task6_3.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task6_4", "Task6_4\Task6_4.csproj", "{342E224A-1214-4514-838D-2A62081682E0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebDriverDesktopCategoryTestCount", "WebDriverDesktopCategoryTestCount", "{E09074DE-0FF8-4465-A2DE-5E60C7B051D9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebDriverDesktopCategoryAmountOfItemsTest", "WebDriverDesktopCategoryAmountOfItemsTest", "{E09074DE-0FF8-4465-A2DE-5E60C7B051D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopCategoryTestCount", "DesktopCategoryTest\DesktopCategoryTestCount.csproj", "{DD27979B-41A5-4198-8A1D-9DE86C90767F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopCategoryAmountOfItemsTest", "DesktopCategoryTest\DesktopCategoryAmountOfItemsTest.csproj", "{DD27979B-41A5-4198-8A1D-9DE86C90767F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebDriverDesktopCategoryTestShowItems", "WebDriverDesktopCategoryTestShowItems", "{2CE5A4BB-6D8D-497E-AF39-F555DC6FDED9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebDriverDesktopCategoryShowItemsTest", "WebDriverDesktopCategoryShowItemsTest", "{2CE5A4BB-6D8D-497E-AF39-F555DC6FDED9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopCategoryTestShowItems", "DesktopCategoryTestShowItems\DesktopCategoryTestShowItems.csproj", "{245CB984-55B8-4245-ABDF-79E13C82CC51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopCategoryShowItemsTest", "DesktopCategoryTestShowItems\DesktopCategoryShowItemsTest.csproj", "{245CB984-55B8-4245-ABDF-79E13C82CC51}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebDriverDesktopCategoryTestSortItems", "WebDriverDesktopCategoryTestSortItems", "{61FE3095-D1F6-4FE5-8741-76589342A92D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebDriverDesktopCategorySortItemsTest", "WebDriverDesktopCategorySortItemsTest", "{61FE3095-D1F6-4FE5-8741-76589342A92D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopCategoryTestSortItems", "DesktopCategoryTestSortItems\DesktopCategoryTestSortItems.csproj", "{BD0EA3CA-863C-48E5-9A1E-664C8FEFA2D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopCategorySortItemsTest", "DesktopCategoryTestSortItems\DesktopCategorySortItemsTest.csproj", "{BD0EA3CA-863C-48E5-9A1E-664C8FEFA2D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

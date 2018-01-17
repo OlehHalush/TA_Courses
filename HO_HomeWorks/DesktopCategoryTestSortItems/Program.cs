@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,13 +9,10 @@ using OpenQA;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace DesktopCategoryTestSortItems
+namespace DesktopCategorySortItemsTest
 {
     public class Program
     {
-        public void SortItems()
-        { }
-
         static void Main(string[] args)
         {
         }
